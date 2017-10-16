@@ -32,33 +32,39 @@ class DealForm extends React.Component {
   render() {
     return (
       <form className="deal-form" onSubmit={this.handleSubmit}>
-        <label>Institution:
-          <input
-            className="input"
-            ref="institution"
-            value={this.state.institution}
-            placeholder="LS Credit Union"
-            onChange={this.update('institution')}
-            required/>
-        </label>
-        <label>Deal Type:
-          <input
-            className="input"
-            ref="dealType"
-            value={this.state.dealType}
-            placeholder="Consumer Auto"
-            onChange={this.update('dealType')}
-            required/>
-        </label>
-        <label>Deal Size:
-          <input
-            className="input"
-            ref="dealSize"
-            value={this.state.dealSize}
-            placeholder="$1,000,000"
-            onChange={this.update('dealSize')}
-            required/>
-        </label>
+        <div>
+          <label>Institution:
+            <input
+              className="input"
+              ref="institution"
+              value={this.state.institution}
+              placeholder="LS Credit Union"
+              onChange={this.update('institution')}
+              required/>
+          </label>
+        </div>
+        <div>
+          <label>Deal Type:
+            <input
+              className="input"
+              ref="dealType"
+              value={this.state.dealType}
+              placeholder="Consumer Auto"
+              onChange={this.update('dealType')}
+              required/>
+          </label>
+        </div>
+        <div>
+          <label>Deal Size:
+            <input
+              className="input"
+              ref="dealSize"
+              value={this.state.dealSize}
+              placeholder="$1,000,000"
+              onChange={this.update('dealSize')}
+              required/>
+          </label>
+        </div>
         <button className="create-button">Create Deal</button>
       </form>
     );

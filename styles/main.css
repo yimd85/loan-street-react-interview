@@ -1,3 +1,5 @@
+/* Table Styles */
+
 table {
   background: white;
   border-radius:3px;
@@ -83,4 +85,34 @@ td {
 
 td:last-child {
   border-right: 0px;
+}
+
+/* Form Styles */
+.deal-form {
+  font-size: 20px;
+  margin-top: 20px;
+  padding: 10px;
+  background-color: darkgreen;
+  border-radius: 2px;
+  width: 350px;
+}
+
+.deal-form div {
+  margin-top: 5px;
+}
+
+.deal-form label {
+  color: white;
+  font-weight: bold;
+}
+
+.deal-form input {
+  margin-left: 5px;
+  font-size: 20px;
+}
+
+.create-button {
+  font-size: 20px;
+  margin-top: 10px;
+  width: 300px;
 }

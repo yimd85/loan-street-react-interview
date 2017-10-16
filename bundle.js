@@ -26891,40 +26891,52 @@ var DealForm = function (_React$Component) {
         "form",
         { className: "deal-form", onSubmit: this.handleSubmit },
         _react2.default.createElement(
-          "label",
+          "div",
           null,
-          "Institution:",
-          _react2.default.createElement("input", {
-            className: "input",
-            ref: "institution",
-            value: this.state.institution,
-            placeholder: "LS Credit Union",
-            onChange: this.update('institution'),
-            required: true })
+          _react2.default.createElement(
+            "label",
+            null,
+            "Institution:",
+            _react2.default.createElement("input", {
+              className: "input",
+              ref: "institution",
+              value: this.state.institution,
+              placeholder: "LS Credit Union",
+              onChange: this.update('institution'),
+              required: true })
+          )
         ),
         _react2.default.createElement(
-          "label",
+          "div",
           null,
-          "Deal Type:",
-          _react2.default.createElement("input", {
-            className: "input",
-            ref: "dealType",
-            value: this.state.dealType,
-            placeholder: "Consumer Auto",
-            onChange: this.update('dealType'),
-            required: true })
+          _react2.default.createElement(
+            "label",
+            null,
+            "Deal Type:",
+            _react2.default.createElement("input", {
+              className: "input",
+              ref: "dealType",
+              value: this.state.dealType,
+              placeholder: "Consumer Auto",
+              onChange: this.update('dealType'),
+              required: true })
+          )
         ),
         _react2.default.createElement(
-          "label",
+          "div",
           null,
-          "Deal Size:",
-          _react2.default.createElement("input", {
-            className: "input",
-            ref: "dealSize",
-            value: this.state.dealSize,
-            placeholder: "$1,000,000",
-            onChange: this.update('dealSize'),
-            required: true })
+          _react2.default.createElement(
+            "label",
+            null,
+            "Deal Size:",
+            _react2.default.createElement("input", {
+              className: "input",
+              ref: "dealSize",
+              value: this.state.dealSize,
+              placeholder: "$1,000,000",
+              onChange: this.update('dealSize'),
+              required: true })
+          )
         ),
         _react2.default.createElement(
           "button",
