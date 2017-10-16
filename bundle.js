@@ -1942,7 +1942,7 @@ var receiveDeals = exports.receiveDeals = function receiveDeals(deals) {
 
 var receiveDeal = exports.receiveDeal = function receiveDeal(deal) {
   return {
-    type: RECEIVE_DEALS,
+    type: RECEIVE_DEAL,
     deal: deal
   };
 };
@@ -26640,6 +26640,10 @@ var _deals_table_row = __webpack_require__(177);
 
 var _deals_table_row2 = _interopRequireDefault(_deals_table_row);
 
+var _deal_form = __webpack_require__(178);
+
+var _deal_form2 = _interopRequireDefault(_deal_form);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -26710,7 +26714,8 @@ var DealsList = function (_React$Component) {
             null,
             dealsTableRows
           )
-        )
+        ),
+        _react2.default.createElement(_deal_form2.default, { receiveDeal: receiveDeal })
       );
     }
   }]);
@@ -26810,6 +26815,132 @@ var DealsTableRow = function (_React$Component) {
 }(_react2.default.Component);
 
 exports.default = DealsTableRow;
+
+/***/ }),
+/* 178 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(1);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var DealForm = function (_React$Component) {
+  _inherits(DealForm, _React$Component);
+
+  function DealForm(props) {
+    _classCallCheck(this, DealForm);
+
+    var _this = _possibleConstructorReturn(this, (DealForm.__proto__ || Object.getPrototypeOf(DealForm)).call(this, props));
+
+    _this.state = {
+      institution: "",
+      dealType: "",
+      dealSize: "",
+      isPublished: false
+    };
+
+    _this.handleSubmit = _this.handleSubmit.bind(_this);
+    return _this;
+  }
+
+  _createClass(DealForm, [{
+    key: "update",
+    value: function update(property) {
+      var _this2 = this;
+
+      return function (e) {
+        return _this2.setState(_defineProperty({}, property, e.target.value));
+      };
+    }
+  }, {
+    key: "handleSubmit",
+    value: function handleSubmit(e) {
+      e.preventDefault();
+      var deal = Object.assign({}, this.state, { id: new Date().getTime() });
+      this.props.receiveDeal(deal);
+      this.setState({
+        institution: "",
+        dealType: "",
+        dealSize: "",
+        isPublished: false
+      });
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      return _react2.default.createElement(
+        "form",
+        { className: "deal-form", onSubmit: this.handleSubmit },
+        _react2.default.createElement(
+          "label",
+          null,
+          "Institution:",
+          _react2.default.createElement("input", {
+            className: "input",
+            ref: "institution",
+            value: this.state.institution,
+            placeholder: "LS Credit Union",
+            onChange: this.update('institution'),
+            required: true })
+        ),
+        _react2.default.createElement(
+          "label",
+          null,
+          "Deal Type:",
+          _react2.default.createElement("input", {
+            className: "input",
+            ref: "dealType",
+            value: this.state.dealType,
+            placeholder: "Consumer Auto",
+            onChange: this.update('dealType'),
+            required: true })
+        ),
+        _react2.default.createElement(
+          "label",
+          null,
+          "Deal Size:",
+          _react2.default.createElement("input", {
+            className: "input",
+            ref: "dealSize",
+            value: this.state.dealSize,
+            placeholder: "$1,000,000",
+            onChange: this.update('dealSize'),
+            required: true })
+        ),
+        _react2.default.createElement(
+          "button",
+          { className: "create-button" },
+          "Create Deal"
+        )
+      );
+    }
+  }]);
+
+  return DealForm;
+}(_react2.default.Component);
+
+;
+
+exports.default = DealForm;
 
 /***/ })
 /******/ ]);

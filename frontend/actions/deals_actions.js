@@ -7,6 +7,6 @@ export const receiveDeals = deals => ({
 });
 
 export const receiveDeal = deal => ({
-  type: RECEIVE_DEALS,
+  type: RECEIVE_DEAL,
   deal
 });

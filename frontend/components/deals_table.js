@@ -1,6 +1,7 @@
 import React from 'react';
 
 import DealsTableRow from './deals_table_row';
+import DealForm from './deal_form';
 
 class DealsList extends React.Component {
 
@@ -29,6 +30,7 @@ class DealsList extends React.Component {
             { dealsTableRows }
           </tbody>
         </table>
+        <DealForm receiveDeal={ receiveDeal }/>
       </div>
     );
   }
