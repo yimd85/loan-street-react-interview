@@ -1,10 +1,10 @@
 import React from 'react';
 import { Provider } from 'react-redux';
-import DealsListContainer from '../containers/deals_list_container.js'
+import DealsTableContainer from '../containers/deals_table_container.js'
 
 const Root = ({ store }) => (
   <Provider store={store}>
-    <DealsListContainer />
+    <DealsTableContainer />
   </Provider>
 );
 

@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import DealsList from '../components/deals_list';
+import DealsTable from '../components/deals_table';
 
 import { receiveDeals, receiveDeal } from '../actions/deals_actions';
 import { allDeals } from '../reducers/selectors';
@@ -17,4 +17,4 @@ const mapDispatchToProps = dispatch => ({
 export default connect(
   mapStateToProps,
   mapDispatchToProps
-)(DealsList);
+)(DealsTable);
