@@ -1,7 +1,7 @@
 var path = require('path');
 
 module.exports = {
-  entry: './frontend/todo.js',
+  entry: './frontend/deals.js',
   output: {
     filename: './bundle.js',
   },
