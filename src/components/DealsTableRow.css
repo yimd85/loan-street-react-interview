@@ -1,0 +1,53 @@
+.DealsTableRow {
+  border-top: 1px solid #C1C3D1;
+  border-bottom-: 1px solid #C1C3D1;
+  color: #666B85;
+  font-size: 16px;
+  font-weight: normal;
+  text-shadow: 0 1px 1px rgba(256, 256, 256, 0.1);
+}
+
+.DealsTableRow:hover td {
+  background: #4E5066;
+  color: #FFFFFF;
+  border-top: 1px solid #22262e;
+}
+
+.DealsTableRow:first-child {
+  border-top: none;
+}
+
+.DealsTableRow:last-child {
+  border-bottom: none;
+}
+
+.DealsTable:nth-child(odd) .DealsTable--cell {
+  background: #EBEBEB;
+}
+
+.DealsTable:nth-child(odd):hover .DeaslTable--cell {
+  background: #4E5066;
+}
+
+.DealsTableRow:last-child .DealsTable--cell:first-child {
+  border-bottom-left-radius: 3px;
+}
+
+.DealsTableRow:last-child .DealsTable--cell:last-child {
+  border-bottom-right-radius: 3px;
+}
+
+.DealsTableRow--cell {
+  background: #FFFFFF;
+  padding: 20px;
+  text-align: left;
+  vertical-align: middle;
+  font-weight: 300;
+  font-size: 18px;
+  text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.1);
+  border-right: 1px solid #C1C3D1;
+}
+
+.DealsTableRow--cell:last-child {
+  border-right: 0px;
+}
