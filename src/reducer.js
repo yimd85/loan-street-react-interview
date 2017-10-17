@@ -7,14 +7,14 @@ const initialState = {
     {
       id: 1,
       institution: 'LS Credit Union',
-      dealSize: 1000000,
+      dealSize: '1000000',
       dealType: 'Consumer Auto',
       isPublished: true,
     },
     {
       id: 2,
       institution: 'LS Credit Union',
-      dealSize: 5000000,
+      dealSize: '5000000',
       dealType: 'Real Estate',
       isPublished: false,
     }
