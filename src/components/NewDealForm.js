@@ -4,6 +4,14 @@ import noop from 'lodash/noop';
 
 import './NewDealForm.css';
 
+// We might make this another property.
+const DEFAULT_DEAL = {
+  institution: '',
+  dealType: '',
+  dealSize: '',
+  isPublished: false
+};
+
 class DealForm extends Component {
   static propTypes = {
     onCreateDeal: PropTypes.func
@@ -14,12 +22,7 @@ class DealForm extends Component {
   }
 
   // State represents a deal.
-  state = {
-    institution: '',
-    dealType: '',
-    dealSize: '',
-    isPublished: false,
-  };
+  state = { ...DEFAULT_DEAL };
 
   propertyUpdater(property) {
     return e => this.setState({[property]: e.target.value});
@@ -27,19 +30,14 @@ class DealForm extends Component {
 
   createDeal = e => {
     e.preventDefault();
-    if (this.props.createDeal)
-      this.props.createDeal({ ...this.state });
+    if (this.props.onCreateDeal)
+      this.props.onCreateDeal({ ...this.state });
 
-    // Reset state.
-    this.setState({
-      institution: '',
-      dealType: '',
-      dealSize: ''
-    });
+    // Reset state for the next deal input.
+    this.setState({ ...DEFAULT_DEAL });
   }
 
   render() {
-    console.log(this.updater)
     return (
       <form className="NewDealForm">
         <div className="NewDealForm--div">

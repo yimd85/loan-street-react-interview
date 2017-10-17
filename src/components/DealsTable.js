@@ -11,7 +11,7 @@ class DealsList extends Component {
       PropTypes.shape({
         id: PropTypes.number.isRequired,
         institution: PropTypes.string.isRequired,
-        dealSize: PropTypes.number.isRequired,
+        dealSize: PropTypes.string.isRequired,
         dealType: PropTypes.string.isRequired,
         isPublished: PropTypes.bool.isRequired
       })
