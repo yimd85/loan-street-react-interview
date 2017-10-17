@@ -1,3 +1,11 @@
+# Install and Run
+
+You need npm and yarn installed (`brew install npm` and `brew install yarn`).
+
+To install run `npm install`
+
+To start a local server run the command `yarn start` in the root directory of the repository.
+
 # Assignment
 
 * Add validation to `NewDealForm` so that a deal isn't created unless all fields are entered.  Display errors when a field is missing or contains bad data.
@@ -16,10 +24,4 @@ What is the generally recommended solution?
 * How would you hook this frontend to a backend (vs storing the data locally in the store only).  How would you load initial data?
 
 * What other suggestions can you make to improve the quality of the code?
-
-# Install and Run
-
-To install run `npm install`
-
-To start a local server run the command `yarn start` in the root directory of the repository.
 
