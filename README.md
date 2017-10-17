@@ -8,7 +8,7 @@ To start a local server run the command `yarn start` in the root directory of th
 
 # Assignment
 
-* Add validation to `NewDealForm` so that a deal isn't created unless all fields are entered.  Display errors when a field is missing or contains bad data.
+* Add validation so that a deal isn't created unless all fields are entered.  Display errors when a field is missing or contains bad data.
 
 * Add ability to remove deals from the `DealsTable` (interface up to you).
 
