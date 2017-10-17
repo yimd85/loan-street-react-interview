@@ -17,7 +17,9 @@ What is the generally recommended solution?
 
 * What other suggestions can you make to improve the quality of the code?
 
-# Running
+# Install and Run
+
+To install run `npm install`
 
 To start a local server run the command `yarn start` in the root directory of the repository.
 
