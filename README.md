@@ -1,4 +1,6 @@
-# Install and Run
+# Setup
+
+Fork the repo and clone locally
 
 You need npm and yarn installed (`brew install npm` and `brew install yarn`).
 
@@ -6,7 +8,11 @@ To install run `npm install`
 
 To start a local server run the command `yarn start` in the root directory of the repository.
 
-# Assignment
+# Assignmet
+
+Please complete in any order whichever features or questions you wish. If you're doing this on-site, it's not expected that everything is completed within an hour.  When complete, just submit a PR.  Thank you!
+
+## Features
 
 * Add validation so that a deal isn't created unless all fields are entered.  Display errors when a field is missing or contains bad data.
 
@@ -16,7 +22,7 @@ To start a local server run the command `yarn start` in the root directory of th
 
 * Add ability to sort deal rows in ascending order by clicking the header cell of the field by which you wish to order.
 
-# Questions
+## Questions
 
 * `NewDealForm` will rerender some of its children unnecessarily.  Why? 
 What is the generally recommended solution?
