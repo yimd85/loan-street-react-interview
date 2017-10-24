@@ -8,7 +8,7 @@ To install run `npm install`
 
 To start a local server run the command `yarn start` in the root directory of the repository.
 
-# Assignmet
+# Assignment
 
 Please complete in any order whichever features or questions you wish. If you're doing this on-site, it's not expected that everything is completed within an hour.  When complete, just submit a PR.  Thank you!
 
