@@ -24,8 +24,7 @@ Please complete in any order whichever features or questions you wish. If you're
 
 ## Questions
 
-* `NewDealForm` will rerender some of its children unnecessarily.  Why? 
-What is the generally recommended solution?
+* `NewDealForm` will rerender some of its children unnecessarily.  Why? What is the generally recommended solution?
 
 * How would you hook this frontend to a backend (vs storing the data locally in the store only).  How would you load initial data?
 
