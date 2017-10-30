@@ -29,7 +29,7 @@ Please complete in any order whichever features or questions you wish. If you're
 
 * Add ability to publish a deal from the `DealsTable` (interface up to you).
 
-* Add ability to sort deal rows in ascending order by clicking the header cell of the field by which you wish to order.
+* Add ability to sort deal rows in ascending or descending order by clicking the header cell of the different fields by which you wish to order.
 
 ## Questions
 
