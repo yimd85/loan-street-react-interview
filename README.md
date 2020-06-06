@@ -1,38 +1,55 @@
-# Setup
+# LoanStreet Frontend Challenge
 
-Clone or Fork the repo 
+## Overview
 
-You need yarn installed (For Mac, `brew install yarn`).
+LoanStreet has recently taken on some new credit union clients! These credit unions need a way to quickly see their deals portfolio. Your task is to add a few pieces of functionality to the existing frontend. Please read the instructions carefully and allocate six hours to complete these prompts.
 
-To install run `yarn install`
+_*DO NOT SPEND MORE THAN SIX HOURS ON THIS PROJECT.*_
 
-To start a local server run the command `yarn start` in the root directory of the repository.
+## Project Setup
 
-After completion you can 
+1. Clone or Fork the repo
+2. You need yarn installed (For Mac, `brew install yarn`).
+3. To install run `yarn`
+4. To start the local frontend server run the command `yarn start` in the root directory of the repository.
+5. _For Bonus Section:_ To access the mock API, first run `yarn global add json-server`. Then, run `yarn server`.
 
-- Submit a pull request
+## Your Tasks
 
-- Or you can email the url of the repo if public
+- Add validation so that a deal isn't created unless all fields are entered. Display errors when a field is missing or contains bad data according to the UX form fields design.
 
-# Assignment
+- Add ability to remove deals from the `DealsTable` (interface up to you).
 
-Please complete at least one feature and answer at least one question
+- Add ability to publish a deal from the `DealsTable` (interface up to you).
 
-## Features
+- Add ability to sort deal rows in ascending or descending order by clicking the header cell of the different fields by which you wish to order. You can find the `SortIcon` is in the `assets` folder.
 
-* Add validation so that a deal isn't created unless all fields are entered.  Display errors when a field is missing or contains bad data.
+## Bonus
 
-* Add ability to remove deals from the `DealsTable` (interface up to you).
+If you have time left over, feel free to attempt any of the challenges below that you feel are best suited to your interests and skills!
 
-* Add ability to publish a deal from the `DealsTable` (interface up to you).
+- Style the `DealsTable` according to the new Data Table component design that UX has given you. 
 
-* Add ability to sort deal rows in ascending or descending order by clicking the header cell of the different fields by which you wish to order.
+- Connect to the mock json server using the HTTP client of your choice so that any data that you manipulate saves into the `db.json` file.
 
-## Questions
+- Write tests for any of the requirements that you implement.
 
-* `NewDealForm` will rerender some of its children unnecessarily.  Why? What is the generally recommended solution?
+## Delivery
 
-* How would you hook this frontend to a backend (vs storing the data locally in the store only).  How would you load initial data?
+Please push your code to the branch provided to you by your recruiter.
 
-* What other suggestions can you make to improve the quality of the code?
+_*Please contact careers@loan-street.com if you have not yet received a branch.*_
 
+## Discussion
+
+This project will assist fellow engineers in getting to know you and your work. Please do not hesitate to ask questions and request clarifications.
+
+The engineering team will debrief and review this code with you as part of the interview process. Be prepared to answer questions such as:
+
+- `NewDealForm` will rerender some of its children unnecessarily. Why? What is the generally recommended solution?
+
+- In the real world, how would you hook this frontend to a backend (vs the mock API). How would you load initial data that the credit union sends us?
+
+- How would you think about scaling the UI components you built and used for these features to future parts of the app?
+
+- What other suggestions can you make to improve the quality of the code?
