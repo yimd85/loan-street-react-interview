@@ -8,11 +8,11 @@ _*DO NOT SPEND MORE THAN SIX HOURS ON THIS PROJECT.*_
 
 ## Project Setup
 
-1. Clone or Fork the repo
-2. You need yarn installed (For Mac, `brew install yarn`).
-3. To install run `yarn`
-4. To start the local frontend server run the command `yarn start` in the root directory of the repository.
-5. _For Bonus Section:_ To access the mock API, first run `yarn global add json-server`. Then, run `yarn server`.
+_Note_: You will need [Yarn package manager](https://yarnpkg.com/getting-started/install) installed (for Mac, `brew install yarn`).
+1. Clone or Fork the repository
+2. Run `yarn`, in the project's root directory, to install all the packages
+3. Run `yarn start`, in the project's root directory, to run the local frontend server
+4. _For Bonus Section:_ To access the mock API, run `yarn global add json-server` followed by `yarn server`
 
 ## Your Tasks
 
