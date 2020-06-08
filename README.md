@@ -46,7 +46,7 @@ This project will assist fellow engineers in getting to know you and your work. 
 
 The engineering team will debrief and review this code with you as part of the interview process. Be prepared to answer questions such as:
 
-- `NewDealForm` will rerender some of its children unnecessarily. Why? What is the generally recommended solution?
+- `NewDealForm` calls `setNewDeal` every time the user types a letter into the form. Discuss what you think are the pros and cons of this form handling implementation.
 
 - In the real world, how would you hook this frontend to a backend (vs the mock API). How would you load initial data that the credit union sends us?
 
