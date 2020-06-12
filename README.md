@@ -16,7 +16,7 @@ _Note_: You will need [Yarn package manager](https://yarnpkg.com/getting-started
 
 ## Your Tasks
 
-- Add validation so that a deal isn't created unless all fields are entered. Display errors when a field is missing or contains bad data according to the UX form fields design.
+- Add validation so that a deal isn't created unless all fields are entered. Display errors when a field is missing or contains bad data according to the [UX form fields design](https://zeroheight.com/380001a9e/p/0324ad-fields-wip/b/59d2d7/i/14227377).
 
 - Add ability to remove deals from the `DealsTable` (interface up to you).
 
@@ -28,7 +28,7 @@ _Note_: You will need [Yarn package manager](https://yarnpkg.com/getting-started
 
 If you have time left over, feel free to attempt any of the challenges below that you feel are best suited to your interests and skills!
 
-- Style the `DealsTable` according to the new Data Table component design that UX has given you. 
+- Style the `DealsTable` according to the new [Data Table component design](https://zeroheight.com/380001a9e/p/94dbf3-tables-wip/b/261939/i/14227548) that UX has given you. 
 
 - Connect to the mock json server using the HTTP client of your choice so that any data that you manipulate saves into the `db.json` file.
 
