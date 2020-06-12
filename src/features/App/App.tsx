@@ -4,9 +4,7 @@ import NewDealForm from "../NewDealForm/NewDealFormContainer";
 import "./App.scss";
 import LSLogo from "../../assets/LSLogo";
 
-type Props = {};
-
-const App = (props: Props) => {
+const App = () => {
   return (
     <>
       <div className='App--header'>
