@@ -9,6 +9,7 @@ _*DO NOT SPEND MORE THAN SIX HOURS ON THIS PROJECT.*_
 ## Project Setup
 
 _Note_: You will need [Yarn package manager](https://yarnpkg.com/getting-started/install) installed (for Mac, `brew install yarn`).
+
 1. Clone or Fork the repository
 2. Run `yarn`, in the project's root directory, to install all the packages
 3. Run `yarn start`, in the project's root directory, to run the local frontend server
@@ -28,7 +29,7 @@ _Note_: You will need [Yarn package manager](https://yarnpkg.com/getting-started
 
 If you have time left over, feel free to attempt any of the challenges below that you feel are best suited to your interests and skills!
 
-- Style the `DealsTable` according to the new [Data Table component design](https://zeroheight.com/380001a9e/p/94dbf3-tables-wip/b/261939/i/14227548) that UX has given you. 
+- Style the `DealsTable` according to the new [Data Table component design](https://zeroheight.com/380001a9e/p/94dbf3-tables-wip/b/261939/i/14227548) that UX has given you.
 
 - Connect to the mock json server using the HTTP client of your choice so that any data that you manipulate saves into the `db.json` file.
 
@@ -36,9 +37,7 @@ If you have time left over, feel free to attempt any of the challenges below tha
 
 ## Delivery
 
-Please push your code to the branch provided to you by your recruiter.
-
-_*Please contact careers@loan-street.com if you have not yet received a branch.*_
+When you're complete, please send a `.zip` or `.tar` of your repo to careers@loan-street.com. You can also reach out to this email address if you have any questions.
 
 ## Discussion
 
