@@ -37,7 +37,7 @@ If you have time left over, feel free to attempt any of the challenges below tha
 
 ## Delivery
 
-When you're complete, please send a `.zip` or `.tar` of your repo to careers@loan-street.com. You can also reach out to this email address if you have any questions.
+When you're complete, please send a `.zip` or `.tar` of your repo to eng.interview@loan-street.com. You can also reach out to this email address if you have any questions.
 
 ## Discussion
 
