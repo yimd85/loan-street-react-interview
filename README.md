@@ -29,11 +29,11 @@ _Note_: You will need [Yarn package manager](https://yarnpkg.com/getting-started
 
 If you have time left over, feel free to attempt any of the challenges below that you feel are best suited to your interests and skills!
 
-- Style the `DealsTable` according to the new [Data Table component design](https://zeroheight.com/380001a9e/p/94dbf3-tables-wip/b/261939/i/14227548) that UX has given you.
-
 - Connect to the mock json server using the HTTP client of your choice so that any data that you manipulate saves into the `db.json` file.
 
 - Write tests for any of the requirements that you implement.
+
+- Pretty up the table styling
 
 ## Delivery
 
