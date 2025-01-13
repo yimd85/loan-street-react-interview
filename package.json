@@ -4,16 +4,16 @@
   "private": true,
   "dependencies": {
     "lodash": "^4.17.21",
-    "node-sass": "^4.14.1",
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "react-redux": "^7.2.0",
     "react-scripts": "3.4.1",
+    "sass": "1.83.1",
     "redux": "^4.0.0"
   },
   "scripts": {
     "build": "react-scripts build",
-    "start": "react-scripts start index.tsx",
+    "start": "react-scripts --openssl-legacy-provider start index.tsx",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "server": "json-server --watch db.json --port 8000"
