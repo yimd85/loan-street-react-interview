@@ -63,6 +63,8 @@ body {
     height: fit-content;
     background-color: $Marshmellow;
     height: 80vh;
+    max-height: 80vh;
+    overflow-y: auto;
 
     &--header {
       align-self: flex-start;

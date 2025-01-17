@@ -7,5 +7,11 @@ export type DealType = {
 }
 
 export type DealsListType = {
-    deals: DealType[]
+    deals: DealType[];
+}
+
+export type DealErrorType = {
+    institution: string;
+    dealSize: string;
+    dealType: string;
 }

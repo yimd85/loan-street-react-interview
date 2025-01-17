@@ -1,4 +1,4 @@
-import { CREATE_DEAL } from "./actions";
+import { CREATE_DEAL, TOGGLE_PUBLISH, DELETE_DEAL, } from "./actions";
 import { DealType, DealsListType } from "../types";
 
 let nextDealId = 3;
@@ -34,6 +34,23 @@ export default (state = initialState, action: ActionType) => {
         ...state,
         deals: [...state.deals, { ...action.payload.deal, id: nextDealId++ }],
       };
+
+    case TOGGLE_PUBLISH:
+      const dealsCopy = [...state.deals];
+      const ind = state.deals.findIndex(v => v.id === action.payload.deal.id);
+      dealsCopy[ind] = {...action.payload.deal, isPublished: !action.payload.deal.isPublished};
+
+      return {
+        ...state,
+        deals: dealsCopy,
+      };
+
+    case DELETE_DEAL:
+      return {
+        ...state,
+        deals: state.deals.filter(v => v.id !== action.payload.deal.id),
+      };
+
     default:
       return state;
   }

@@ -50,4 +50,24 @@
       border-right: 0px;
     }
   }
+
+  &--buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+  }
+
+  &--button{
+    border: 1px solid $Charcoal;
+    background-color: #c1c3d1;
+
+    &:last-child {
+      border-right: 0px;
+    }
+
+    &:hover{
+      background-color: $Marshmellow;
+    }
+  }
 }

@@ -7,6 +7,10 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+
+    &--error{
+      color: $RoseLight3;
+    }
   }
 
   &--label {
@@ -17,5 +21,14 @@
   &--button {
     margin-top: 8px;
     align-self: flex-end;
+
+    &--disabled {
+      @extend .NewDealForm--button;
+      background-color: $Tin;
+      &:hover {
+        background-color: $Tin;
+      }
+    }
+
   }
 }

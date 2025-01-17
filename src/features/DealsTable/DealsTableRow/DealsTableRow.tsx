@@ -1,6 +1,5 @@
 import React from "react";
 import { DealType } from "../../../types";
-
 import "./DealsTableRow.scss";
 
 const currencyAmountToString = (amount: string) => {
@@ -9,20 +8,44 @@ const currencyAmountToString = (amount: string) => {
 
 type DealsTableRowProps = {
   deal: DealType;
+  onTogglePublish: (deal: DealType) => void;
+  onDeleteDeal: (deal: DealType) => void;
 };
 
 const DealsTableRow = (props: DealsTableRowProps) => {
   const {
-    deal: { institution, dealType, dealSize, isPublished },
+    deal,
+    onTogglePublish,
+    onDeleteDeal,
   } = props;
   return (
     <tr className='DealsTableRow'>
-      <td className='DealsTableRow--cell'>{institution}</td>
-      <td className='DealsTableRow--cell'>{dealType}</td>
+      <td className='DealsTableRow--cell'>{deal.institution}</td>
+      <td className='DealsTableRow--cell'>{deal.dealType}</td>
       <td className='DealsTableRow--cell'>
-        {currencyAmountToString(dealSize)}
+        {currencyAmountToString(deal.dealSize)}
       </td>
-      <td className='DealsTableRow--cell'>{isPublished ? "Yes" : "No"}</td>
+      <td className='DealsTableRow--cell'>{deal.isPublished ? "Yes" : "No"}</td>
+      <td className='DealsTableRow--cell'>
+        <div className='DealsTableRow--buttons'>
+          <button
+            onClick={() => onTogglePublish(deal)}
+            className='DealsTableRow--button'
+          >
+            <span role="img" aria-label="published-state">
+              {deal.isPublished ? '👍' : '👎'}
+            </span>
+          </button>
+          <button
+            onClick={() => onDeleteDeal(deal)}
+            className='DealsTableRow--button'
+          >
+            <span role="img" aria-label="delete">
+              🗑️
+            </span>
+          </button>
+        </div>
+      </td>
     </tr>
   );
 };
